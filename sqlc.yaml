@@ -1,0 +1,19 @@
+version: "2"
+project:
+    id: ""
+cloud:
+    organization: ""
+    project: ""
+    hostname: ""
+sql: 
+  - engine: "postgresql"
+    queries: "./db/query"
+    schema: "./db/migration"
+    gen:
+      go:
+        package: "simplebank"
+        out: "simplebank"
+overrides:
+    go: null
+plugins: []
+rules: []
